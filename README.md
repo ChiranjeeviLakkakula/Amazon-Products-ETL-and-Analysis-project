@@ -15,7 +15,7 @@ API documentation - [Amazon Data API](https://rapidapi.com/letscrape-6bRBa3QguO5
 ## _Language Used_
 
 **Python** 
-1. Used python to extract data from Spotify API into JSON format.
+1. Used python to extract data from Amazon Data API into JSON format.
 2. Converted the extracted data set into Dataframe and performed transformation
 
 ## _Services Used_
