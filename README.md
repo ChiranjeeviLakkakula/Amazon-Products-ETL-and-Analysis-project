@@ -1,16 +1,16 @@
-# Amazon Products ETL & Analysis using Quicksight
+# Amazon Data ETL & Analysis using Quicksight
 
 ## _Introduction_
 In this project I have built an ETL(Extract, Transform, Load) pipeline using the Amazon Rapid Api on AWS.
 The pipeline will extract Amazon data from Rapid API, transform it into desired format and load into AWS data store.
 
 ## _Architecture - End to End ETL Pipeline_
-![Architecture Diagram](https://github.com/ChiranjeeviLakkakula/Spotify-Data-Engineering-Project/blob/main/SpotifyDataPipeline.png)
+![Architecture Diagram](https://github.com/ChiranjeeviLakkakula/Amazon-Products-ETL-and-Analysis-project/blob/main/AmazonRealTimeData.jpg)
 
 ## _About Dataset/API_
-Spotify Web API enables the creation of applications that can interact with Spotify's streaming service, such as retrieving content metadata, getting recommendations, creating and managing playlists, or controlling playback.
+Fast, Reliable, and Extensive API for accessing Amazon product data, reviews, best sellers & deals, seller data, and more, in real time. The ideal choice for developers, marketers, and researchers who need to access up-to-date information about Amazon products and services.
 
-API documentation - [Spotify API](https://developer.spotify.com/documentation/web-api)
+API documentation - [Amazon Data API](https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-amazon-data)
 
 ## _Language Used_
 
@@ -32,12 +32,12 @@ API documentation - [Spotify API](https://developer.spotify.com/documentation/we
 
 6. **Amazon Athena:** Amazon Athena is a serverless, interactive query service provided by AWS that allows you to analyze data directly in Amazon S3 using standard SQL. It's designed to be easy to use, requiring no infrastructure to manage, and you only pay for the queries you run. Athena can process large-scale data, making it ideal for log analysis, data analytics, and running interactive queries on petabyte-scale datasets.
 
+7. **AWS Quicksight:** Amazon QuickSight is a cloud-based business intelligence (BI) service provided by AWS. It allows users to create and share interactive dashboards and visualizations to gain insights from their data
+
 ## _Python Packages Used_
 ````
 pip install pandas
-pip install numpy
-pip install spotipy
 ````
 ## _Data Pipeline flow_
 
-Extract Data from Spotify API -> Lambda Trigger(On schedule) -> Run API extract function -> Store raw data -> Transformation function -> Transform data and load -> Query data using Athena
+Extract Data from Amazon Data API -> Lambda Trigger(On schedule) -> Run API extract function -> Store raw data -> Transformation function -> Transform data and load -> Query data using Athena -> Data Analysis on Quicksight 
